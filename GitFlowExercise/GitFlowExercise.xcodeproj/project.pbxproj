@@ -14,6 +14,8 @@
 		674C4C4A22165AD100843DAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 674C4C4922165AD100843DAD /* Assets.xcassets */; };
 		674C4C4D22165AD100843DAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 674C4C4B22165AD100843DAD /* LaunchScreen.storyboard */; };
 		674C4C5022165AD100843DAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 674C4C4F22165AD100843DAD /* main.m */; };
+		674C4C5C22165F9700843DAD /* UIControllerLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 674C4C5A22165F9700843DAD /* UIControllerLogin.m */; };
+		674C4C5D22165F9700843DAD /* UIControllerLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 674C4C5B22165F9700843DAD /* UIControllerLogin.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,9 @@
 		674C4C4C22165AD100843DAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		674C4C4E22165AD100843DAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		674C4C4F22165AD100843DAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		674C4C5922165F9700843DAD /* UIControllerLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIControllerLogin.h; sourceTree = "<group>"; };
+		674C4C5A22165F9700843DAD /* UIControllerLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIControllerLogin.m; sourceTree = "<group>"; };
+		674C4C5B22165F9700843DAD /* UIControllerLogin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIControllerLogin.xib; sourceTree = "<group>"; };
 		7EDDEDF4D075B113A623848D /* Pods-GitFlowExercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitFlowExercise.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitFlowExercise/Pods-GitFlowExercise.release.xcconfig"; sourceTree = "<group>"; };
 		8A4FD3C2418C13B6777E186E /* Pods-GitFlowExercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitFlowExercise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitFlowExercise/Pods-GitFlowExercise.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +70,7 @@
 		674C4C3F22165AD000843DAD /* GitFlowExercise */ = {
 			isa = PBXGroup;
 			children = (
+				674C4C5622165F5F00843DAD /* Codetree */,
 				674C4C4022165AD000843DAD /* AppDelegate.h */,
 				674C4C4122165AD000843DAD /* AppDelegate.m */,
 				674C4C4322165AD000843DAD /* ViewController.h */,
@@ -76,6 +82,32 @@
 				674C4C4F22165AD100843DAD /* main.m */,
 			);
 			path = GitFlowExercise;
+			sourceTree = "<group>";
+		};
+		674C4C5622165F5F00843DAD /* Codetree */ = {
+			isa = PBXGroup;
+			children = (
+				674C4C5722165F7800843DAD /* Login */,
+			);
+			path = Codetree;
+			sourceTree = "<group>";
+		};
+		674C4C5722165F7800843DAD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				674C4C5822165F8100843DAD /* Controllers */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		674C4C5822165F8100843DAD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				674C4C5922165F9700843DAD /* UIControllerLogin.h */,
+				674C4C5A22165F9700843DAD /* UIControllerLogin.m */,
+				674C4C5B22165F9700843DAD /* UIControllerLogin.xib */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		73BA2D02EE5EFD3061844E75 /* Frameworks */ = {
@@ -156,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				674C4C4D22165AD100843DAD /* LaunchScreen.storyboard in Resources */,
+				674C4C5D22165F9700843DAD /* UIControllerLogin.xib in Resources */,
 				674C4C4A22165AD100843DAD /* Assets.xcassets in Resources */,
 				674C4C4822165AD000843DAD /* Main.storyboard in Resources */,
 			);
@@ -220,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				674C4C4522165AD000843DAD /* ViewController.m in Sources */,
+				674C4C5C22165F9700843DAD /* UIControllerLogin.m in Sources */,
 				674C4C5022165AD100843DAD /* main.m in Sources */,
 				674C4C4222165AD000843DAD /* AppDelegate.m in Sources */,
 			);
@@ -367,10 +401,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D265WCWRD3;
 				INFOPLIST_FILE = GitFlowExercise/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shixianjun.GitFlowExercise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -382,10 +420,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D265WCWRD3;
 				INFOPLIST_FILE = GitFlowExercise/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shixianjun.GitFlowExercise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
