@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // 修复线上bug1
+    // 修复线上bug2
+    // 修复线上bug3
+    
     // Do any additional setup after loading the view from its nib.
 }
 
