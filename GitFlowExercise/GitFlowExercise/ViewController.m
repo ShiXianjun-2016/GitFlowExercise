@@ -16,6 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // 修改bug1
+    // 修改bug2
+    // 修改bug3
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
